@@ -1,3 +1,13 @@
 body{
   color: #f00;
 }
+
+.visible{
+  font-size:12px;
+}
+
+
+
+.t1,.t2, .cls1 div{
+  font-size:24px;
+}

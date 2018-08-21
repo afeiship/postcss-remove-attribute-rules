@@ -2,11 +2,18 @@ body{
   color: #f00;
 }
 
-
+.visible,
 body[data-dpr=1]{
   font-size:12px;
 }
 
+body[data-dpr=2]{
+  font-size:24px;
+}
+
+
+
+.t1,.t2, .cls1 div,
 body[data-dpr=2]{
   font-size:24px;
 }

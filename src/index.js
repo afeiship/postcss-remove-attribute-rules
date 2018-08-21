@@ -5,6 +5,21 @@ module.exports = postcss.plugin('postcss-remove-attribute-rules', function (inOp
   return function (css) {
     var options = Object.assign({
       callback: function (inSelector, inRule) {
+        if (ATTR_SELECTOR_RE.test(inSelector)) {
+          var selectors = inSelector.split(',');
+          if (selectors.length === 1) {
+            return true;
+          }
+
+          if (selectors.length > 1) {
+            var newSelectors = selectors.filter(function (selector) {
+              return !ATTR_SELECTOR_RE.test(selector)
+            });
+            inRule.selector = newSelectors.join(',');
+            return false;
+          }
+        }
+
         return ATTR_SELECTOR_RE.test(inSelector);
       }
     }, inOptions);
