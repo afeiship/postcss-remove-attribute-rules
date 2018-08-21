@@ -1,0 +1,12 @@
+body{
+  color: #f00;
+}
+
+
+body[data-dpr=1]{
+  font-size:12px;
+}
+
+body[data-dpr=2]{
+  font-size:24px;
+}
