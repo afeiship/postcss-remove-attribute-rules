@@ -17,3 +17,20 @@ body[data-dpr=2]{
 body[data-dpr=2]{
   font-size:24px;
 }
+
+.webkit-sassui-backdrop.visible-true, 
+.webkit-sassui-backdrop[data-visible=true] {
+    background: rgba(0, 0, 0, 0);
+    animation: fade-in 300ms ease-in forwards; 
+}
+.webkit-sassui-backdrop, 
+.webkit-sassui-backdrop.visible-false, 
+.webkit-sassui-backdrop[data-visible=false] {
+  animation: fade-out 300ms ease-in forwards; 
+}
+.webkit-sassui-backdrop[data-position=fixed] {
+  position: fixed; 
+}
+.webkit-sassui-backdrop[data-position=absolute] {
+  position: absolute; 
+}

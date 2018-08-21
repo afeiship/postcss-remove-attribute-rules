@@ -20,7 +20,7 @@ module.exports = postcss.plugin('postcss-remove-attribute-rules', function (inOp
           }
         }
 
-        return ATTR_SELECTOR_RE.test(inSelector);
+        return false;
       }
     }, inOptions);
     // console.log(options);

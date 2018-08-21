@@ -11,3 +11,14 @@ body{
 .t1,.t2, .cls1 div{
   font-size:24px;
 }
+
+.webkit-sassui-backdrop.visible-true {
+    background: rgba(0, 0, 0, 0);
+    -webkit-animation: fade-in 300ms ease-in forwards;
+            animation: fade-in 300ms ease-in forwards; 
+}
+.webkit-sassui-backdrop, 
+.webkit-sassui-backdrop.visible-false {
+  -webkit-animation: fade-out 300ms ease-in forwards;
+          animation: fade-out 300ms ease-in forwards; 
+}

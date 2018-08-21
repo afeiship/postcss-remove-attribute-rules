@@ -15,11 +15,7 @@ module.exports = {
     //   remove: true
     // }),
     require('postcss-px2rpx'),
-    require("postcss-remove-rules")({
-      callback(inSelector,inRule){
-        return ATTR_SELECTOR_RE.test(inSelector);
-      }
-    })
+    require("postcss-remove-rules")
   ]
 };
 
